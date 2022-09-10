@@ -36,7 +36,7 @@ delBtn.addEventListener("click", function(){
 });
 
 decPoint.addEventListener("click", function(){
-	res.textContent += "?";
+	res.textContent += ".";
 });
 
 eqBtn.addEventListener("click", function(){
