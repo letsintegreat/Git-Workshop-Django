@@ -2,8 +2,8 @@
 {% load static %}
 <html>
 <head>
-	<title>Calculator</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<title>Calculator 🧮</title>
+	<link rel="icon" type="image/x-icon" href="http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/pocket-calculator.png">
 	<link rel="stylesheet" type="text/css" href="{% static "css/calc.css" %}">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
   			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -12,13 +12,12 @@
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron">
-			<h1 class="display-3">Git Workshop - Djamgo</h1>
-			<hr class="my-4">
+		<div class="center">
+			<h1 class="display-3">Git Workshop - Djamgo.</h1>
 		</div>
-
-
-		<textarea id="resultArea" readonly rows="3" cols="21"></textarea>
+<div class="center">
+<div class="calc-wrapper">
+	<textarea id="resultArea" readonly rows="3" cols="21"></textarea>
 
 		<table>
 			<tr>
@@ -56,7 +55,9 @@
 				<td><button id="op0" class="btn btn-default">&plus;</button></td>
 			</tr>
 		</table>
+		</div>
 	</div>
+</div>
 	<script type="text/javascript" src="{% static "js/calc.js" %}"></script>
 </body>
 </html>
