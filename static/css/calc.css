@@ -9,9 +9,62 @@ textarea{
  	margin-left:auto; 
     margin-right:auto;
     border-radius: 5px;
- }
+	font-size: xx-large;
+}
 
- button{
- 	height: 40px;
- 	width: 40px;
- }
+button{
+    height: 40px;
+    width: 40px;
+}
+
+.display-3{
+	font-family: Lorem ipsum dolor sit amet;
+	font-size: 4rem;
+	color:aliceblue;
+	border-bottom: solid aliceblue .5rem;
+}
+textarea{
+    background-color:  rgba(0, 0, 0, .70);
+    color: aliceblue;
+    padding: 10px;
+	width: 90%;
+	
+	top: 0rem;
+	
+	padding: 1rem;
+}
+.center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.calc-wrapper{
+	position: relative;
+	border: solid 5px black;
+	width: min-content;
+	padding-right:2.5% ;
+	padding-left: 2.5%;
+	padding-top: 2.5%;
+	padding-bottom:5% ;
+	background:linear-gradient(
+		rgba(0, 0, 0, 0.2), 
+		rgba(0, 0, 0, 0.2));
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(circle, #04cea9, #660e86);
+}
+
+button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #660e86;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+	width: 5rem;
+	height: 5rem;
+}
+button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
