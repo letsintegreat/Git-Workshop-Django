@@ -6,13 +6,18 @@ var delBtn = document.querySelector("#del");
 var eqBtn = document.querySelector("#eq");
 var decPoint = document.querySelector("#decp");
 var opnSyms = ["+", "-", "*", "/"];
+let new_calc = false;
 
 for(var i=0;i<=9;i++){
 	(function(i){
     	qs = "#num" + i;
 		numKeys.push(document.querySelector(qs));
 		numKeys[i].addEventListener("click", function(){
-			res.textContent += i;
+			if(new_calc){
+				res.textContent = i;
+				new_calc = false;
+			}
+			else res.textContent += i;
 		});
   	}(i));
 }
@@ -42,6 +47,7 @@ decPoint.addEventListener("click", function(){
 eqBtn.addEventListener("click", function(){
 	try{
 		res.textContent = eval(res.textContent);
+		new_calc = true;
 	}
 	catch(e){
 		res.textContent = "Invalid Syntax";
